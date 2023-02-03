@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "latest",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-flowtype": "^8.0.3",
