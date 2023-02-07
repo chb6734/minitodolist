@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  width: 425px;
+  height: 40px;
+}
+.input {
+  margin-top: 8px;
+  width: 100vw;
+  heigth: 100vw;
+}
