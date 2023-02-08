@@ -1,0 +1,12 @@
+.content {
+  color: beige;
+  font-size: 20px;
+  font-family: "Jua", sans-serif;
+  height: 400px;
+  width: 450px;
+  background-color: #29265c;
+}
+
+.item {
+  padding-bottom: 10px;
+}
