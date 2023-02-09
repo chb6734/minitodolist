@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import AddTodo from "./AddTodo";
 import styled from "./Todolist.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
 export default function Todolist() {
   const [todos, setTodos] = useState([]);
 
@@ -24,6 +27,7 @@ export default function Todolist() {
             <li className={styled.item} key={todo.id}>
               <article>
                 <div>{todo.work}</div>
+                <FontAwesomeIcon icon={faTrash} />
               </article>
             </li>
           ))}
