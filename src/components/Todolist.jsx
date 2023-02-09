@@ -25,9 +25,10 @@ export default function Todolist() {
         <ul className={styled.list}>
           {todos.map((todo) => (
             <li className={styled.item} key={todo.id}>
-              <article>
-                <div>{todo.work}</div>
-                <FontAwesomeIcon icon={faTrash} />
+              <article className={styled.article}>
+                <div className={styled.work}>{todo.work}</div>
+
+                <FontAwesomeIcon icon={faTrash} className={styled.trashbtn} />
               </article>
             </li>
           ))}
