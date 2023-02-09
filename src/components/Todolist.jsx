@@ -19,6 +19,10 @@ export default function Todolist() {
   const handleAdd = (todo) => {
     setTodos([...todos, todo]);
   };
+
+  const handleDelete = () => {
+    console.log("삭제 이벤트");
+  };
   return (
     <>
       <div className={styled.content}>
@@ -26,9 +30,16 @@ export default function Todolist() {
           {todos.map((todo) => (
             <li className={styled.item} key={todo.id}>
               <article className={styled.article}>
-                <div className={styled.work}>{todo.work}</div>
+                <div className={styled.checkwork}>
+                  <input type="checkbox" name="state" value={todo.id} />
+                  <div className={styled.work}>{todo.work}</div>
+                </div>
 
-                <FontAwesomeIcon icon={faTrash} className={styled.trashbtn} />
+                <FontAwesomeIcon
+                  icon={faTrash}
+                  className={styled.trashbtn}
+                  onClick={handleDelete}
+                />
               </article>
             </li>
           ))}

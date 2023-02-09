@@ -18,8 +18,14 @@
 }
 .trashbtn {
   padding-right: 40px;
+  cursor: pointer;
+}
+.checkwork {
+  display: flex;
+  flex-direction: row;
 }
 .work {
   max-width: 300px;
   word-break: break-all;
+  padding-left: 5px;
 }
