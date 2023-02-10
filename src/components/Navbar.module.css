@@ -1,4 +1,29 @@
 .nav {
   width: 425px;
   height: 40px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.button {
+  background-color: #5b5fc7;
+  color: white;
+  border: none;
+  font-family: "Jua", sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.activebutton {
+  background-color: #383b7a;
+  color: white;
+  border: none;
+  font-family: "Jua", sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 10px;
 }
