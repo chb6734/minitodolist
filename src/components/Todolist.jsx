@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AddTodo from "./AddTodo";
 import styled from "./Todolist.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import Todo from "./Todo/Todo";
 
 export default function Todolist() {
   const [todos, setTodos] = useState([]);
@@ -19,29 +18,24 @@ export default function Todolist() {
   const handleAdd = (todo) => {
     setTodos([...todos, todo]);
   };
+  const handleUpdate = (updated) => {
+    setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
+  };
 
-  const handleDelete = () => {
-    console.log("삭제 이벤트");
+  const handleDelete = (deleted) => {
+    setTodos(todos.filter((t) => t.id !== deleted.id));
   };
   return (
     <>
       <div className={styled.content}>
         <ul className={styled.list}>
           {todos.map((todo) => (
-            <li className={styled.item} key={todo.id}>
-              <article className={styled.article}>
-                <div className={styled.checkwork}>
-                  <input type="checkbox" name="state" value={todo.id} />
-                  <div className={styled.work}>{todo.work}</div>
-                </div>
-
-                <FontAwesomeIcon
-                  icon={faTrash}
-                  className={styled.trashbtn}
-                  onClick={handleDelete}
-                />
-              </article>
-            </li>
+            <Todo
+              key={todo.id}
+              todo={todo}
+              onUpdate={handleUpdate}
+              onDelete={handleDelete}
+            />
           ))}
         </ul>
       </div>
