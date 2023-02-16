@@ -20,8 +20,8 @@
   border-width: 0;
   height: 42px;
   width: 20%;
-  background-color: #ff8403;
-  color: beige;
+  background-color: var(--button-add-background);
+  color: var(--font-color-white);
   font-size: 20px;
   font-family: "Jua", sans-serif;
   border-top-right-radius: 8px;

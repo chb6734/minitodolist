@@ -6,8 +6,8 @@
   align-items: center;
 }
 .button {
-  background-color: #5b5fc7;
-  color: white;
+  background-color: var(--button-inactive-background);
+  color: var(--font-color-white);
   border: none;
   font-family: "Jua", sans-serif;
   font-size: 15px;
@@ -17,8 +17,8 @@
   border-radius: 10px;
 }
 .activebutton {
-  background-color: #383b7a;
-  color: white;
+  background-color: var(--button-active-background);
+  color: var(--font-color-white);
   border: none;
   font-family: "Jua", sans-serif;
   font-size: 15px;
@@ -26,4 +26,11 @@
   margin-bottom: 8px;
   padding: 10px;
   border-radius: 10px;
+}
+.modebtn {
+  background-color: transparent;
+  border: none;
+  color: var(--font-color-white);
+  font-size: 30px;
+  padding: 170px;
 }

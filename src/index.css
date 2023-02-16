@@ -1,3 +1,13 @@
+:root {
+  --body-background: #454960;
+  --root-background: #15162e;
+  --font-color-white: white;
+  --button-active-background: #383b7a;
+  --button-inactive-background: #5b5fc7;
+  --list-background: #29265c;
+  --button-add-background: #ff8403;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Jua", "Segoe UI", "Roboto",
@@ -5,6 +15,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--body-background);
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  height: 500px;
+  width: 450px;
+  background-color: var(--root-background);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 code {
