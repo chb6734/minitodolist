@@ -18,12 +18,13 @@ export default function Todo({ todo, onUpdate, onDelete }) {
           <div className={styled.checkwork}>
             <input
               type="checkbox"
-              name="state"
-              value={id}
+              id={id}
               checked={state}
               onChange={handleChange}
             />
-            <div className={styled.work}>{work}</div>
+            <lable htmlFor={id} className={styled.work}>
+              {work}
+            </lable>
           </div>
 
           <FontAwesomeIcon

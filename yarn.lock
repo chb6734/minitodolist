@@ -9003,6 +9003,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-hook: ^0.0.1
+    react-icons: ^4.7.1
     react-scripts: 5.0.1
     uuid: ^9.0.0
     web-vitals: ^2.1.0
@@ -10785,6 +10786,15 @@ __metadata:
   version: 0.0.1
   resolution: "react-hook@npm:0.0.1"
   checksum: 0649aceaa6e224e67b67faf82c039860348ce462d3effc2f0980694faad8146880f4613ffd06edefb5fc79fb9ef64ccd205deaf7ee7ff428ea7d3421c52b8291
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "react-icons@npm:4.7.1"
+  peerDependencies:
+    react: "*"
+  checksum: ed3cbdc5fc0c4d7d2debf78fdc8c4c80aeacf85a506a9a3c11b1d5922de393ac0a6542012b7fb81761e9280c54d0f26827d50a92b54ec8f0c8e52364d89970b5
   languageName: node
   linkType: hard
 
