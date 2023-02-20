@@ -19,7 +19,7 @@
 .activebutton {
   background-color: var(--button-active-background);
   color: var(--font-color-white);
-  border: none;
+
   font-family: "Jua", sans-serif;
   font-size: 15px;
   margin-left: 10px;

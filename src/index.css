@@ -1,4 +1,14 @@
 :root {
+  --body-background: ##f5f5f5;
+  --root-background: #fdfffd;
+  --font-color-white: #22243b;
+  --button-active-background: #acacaf;
+  --button-inactive-background: white;
+  --list-background: #d3d3d7;
+  --button-add-background: #ff8403;
+  --body-border: #15162e;
+}
+html.dark {
   --body-background: #454960;
   --root-background: #15162e;
   --font-color-white: white;
@@ -6,8 +16,8 @@
   --button-inactive-background: #5b5fc7;
   --list-background: #29265c;
   --button-add-background: #ff8403;
+  --body-border: #15162e;
 }
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Jua", "Segoe UI", "Roboto",
@@ -30,6 +40,7 @@ body {
   height: 500px;
   width: 450px;
   background-color: var(--root-background);
+  border: 1px solid var(--body-border);
 }
 
 ul {

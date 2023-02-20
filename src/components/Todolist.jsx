@@ -4,16 +4,7 @@ import styled from "./Todolist.module.css";
 import Todo from "./Todo/Todo";
 
 export default function Todolist({ filter }) {
-  const [todos, setTodos] = useState([]);
-
-  useEffect(() => {
-    fetch("data/todos.json")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("data받아옴");
-        setTodos(data);
-      });
-  }, []);
+  const [todos, setTodos] = useState(() => readTodosFromLocalStorage());
 
   const handleAdd = (todo) => {
     setTodos([...todos, todo]);
@@ -25,6 +16,10 @@ export default function Todolist({ filter }) {
   const handleDelete = (deleted) => {
     setTodos(todos.filter((t) => t.id !== deleted.id));
   };
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const filtered = getFilteredItems(todos, filter);
 
@@ -55,4 +50,9 @@ function getFilteredItems(todos, filter) {
   } else {
     return todos.filter((todo) => todo.state === false);
   }
+}
+
+function readTodosFromLocalStorage() {
+  const todos = localStorage.getItem("todos");
+  return todos ? JSON.parse(todos) : [];
 }
