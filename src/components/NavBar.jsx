@@ -8,8 +8,8 @@ export default function NavBar({ filters, filter, onFilterChange }) {
   return (
     <div className={styled.nav}>
       <button onClick={toggleDarkMode} className={styled.modebtn}>
-        {!darkMode && <HiMoon />}
-        {darkMode && <HiSun />}
+        {darkMode && <HiMoon />}
+        {!darkMode && <HiSun />}
       </button>
       {filters.map((value, index) => (
         <button

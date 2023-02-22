@@ -1,7 +1,7 @@
 .content {
   color: var(--font-color-white);
   font-size: 20px;
-  font-family: "Jua", sans-serif;
+  font-family: var(--font-jua);
   height: 400px;
   width: 450px;
   background-color: var(--list-background);
@@ -30,5 +30,4 @@
   width: 350px;
   word-break: break-all;
   padding-left: 5px;
-  background-color: red;
 }
