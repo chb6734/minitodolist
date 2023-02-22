@@ -22,9 +22,9 @@ export default function Todo({ todo, onUpdate, onDelete }) {
               checked={state}
               onChange={handleChange}
             />
-            <lable htmlFor={id} className={styled.work}>
+            <label htmlFor={id} className={styled.work}>
               {work}
-            </lable>
+            </label>
           </div>
 
           <FontAwesomeIcon
