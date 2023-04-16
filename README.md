@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# MiniTodolist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Todolist 프로젝트
 
-## Available Scripts
+# 배포 주소
 
-In the project directory, you can run:
+> **Frontend :** https://gregarious-entremet-6250bb.netlify.app
 
-### `yarn start`
+## 프로젝트 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+LocalStorage를 사용하여 다크모드전환, 아이템 추가 / 삭제, 아이템 분류를 할 수 있는 프로젝트 입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 시작 가이드
 
-### `yarn test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+$ git clone https://github.com/chb6734/minitodolist.git
+$ cd minitodolist
+```
 
-### `yarn build`
+### Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+$ yarn install
+$ yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Stacks 💻
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Environment
 
-### `yarn eject`
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Config
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![yarn](https://img.shields.io/badge/yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![postcss](https://img.shields.io/badge/postcss-DD3A0A?style=for-the-badge&logo=postcss&logoColor=#DD3A0A)
 
-## Learn More
+## 화면 구성 📺
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| 홈 화면 |     |
+| :-----: | :-: |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| <img width="329" src="https://res.cloudinary.com/doqdsre2t/image/upload/v1681660367/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-04-17_%EC%98%A4%EC%A0%84_12.52.14_j1y1yj.png"/>
 
-### Code Splitting
+## |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 주요 기능 📦
 
-### Analyzing the Bundle Size
+### ⭐️ 다크모드 변경
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- 다크모드 클릭시 전체적인 색상이 바뀜.
+- 다크모드 상태값이 Localstorage에 저장이 됨.
 
-### Making a Progressive Web App
+### ⭐️ 아이템 추가/삭제 기능
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 아이템을 추가/삭제하면 LocalStorage에 저장이 됨.
 
-### Advanced Configuration
+### ⭐️ 아이템 상태에 따라 분류 기능
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 아이템의 체크 유무에 따라 분류하여 조회가 가능함.
